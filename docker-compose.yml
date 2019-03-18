@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  ruby:
+    build: .
+    container_name: slack-backup
+    volumes:
+      - .:/app
+    env_file:
+      - app.env
